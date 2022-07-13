@@ -1,0 +1,99 @@
+.card {
+    background-color: #283142;
+    border-radius: 10px;
+    padding: 30px 10px;
+}
+
+.titulo-vendas {
+    color: #676FFF;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.box-formulario {
+    margin-bottom: 16px;
+    max-width: 300px;
+}
+
+.controle-form {
+    width: 100%;
+    height: 46px;
+    color: #9AAABE;
+    background-color: #1B2531;
+    border: 1px solid #384459;
+    border-radius: 5px;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+.tabela-vendas {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.tabela-vendas thead {
+    height: 55px;
+    font-size: 16px;
+    color: #E9E9E9;
+    font-weight: 700;
+}
+
+.tabela-vendas tbody {
+    font-size: 14px;
+    font-weight: 400;
+    color: #CFCFCF;
+    text-align: center;
+}
+
+.tabela-vendas tbody tr {
+    height: 74px;
+    border-top: 1px solid #5F6E82;
+}
+
+.tabela-vendas tbody tr:nth-child(odd) {
+    background-color: #242C3B;
+}
+
+.tabela-vendas tbody tr:hover>td {
+    background-color: #384459;
+}
+
+.box-botao {
+    display: flex;
+    justify-content: center;
+}
+
+/* Comandos para mostrar a Coluna DATA apenas em dispositivos que possuem mais que 576px de largura */
+.mostrar-576 {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .mostrar-576 {
+        display: table-cell;
+    }
+
+    .card {
+        padding: 35px;
+    }
+
+    .tabela-vendas tbody {
+        font-size: 18px;
+    }
+
+    .tabela-vendas tbody tr {
+        height: 55px;
+    }
+}
+
+/* Comandos para mostrar a Coluna DATA apenas em dispositivos que possuem mais que 576px de largura */
+.mostrar-992 {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .mostrar-992 {
+        display: table-cell;
+    }
+}
